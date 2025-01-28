@@ -1,0 +1,21 @@
+:root {
+    --color-bg: #F5EFE7;
+    --color-primary: #213555;
+    --color-text: #333;
+    --color-text-inverted: #ffffff;
+    --color-link: #c0392b;
+    --color-content-bg: #D8C4B6;
+    --color-heading: #2b2b2b;
+  
+    --font-family-base: "Lato", sans-serif;
+    --font-family-heading: "Playwrite AU SA", serif;
+  
+    --font-size-h1: 2.5rem;
+    --font-size-body: 1rem;
+  
+    --spacing-s: 0.5em;
+    --spacing-m: 1em;
+  
+    --radius-default: 5px;
+  }
+  
