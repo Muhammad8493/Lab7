@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -45,13 +47,31 @@ header {
   display: flex;
   gap: var(--spacing-s);
 }
+
 .nav-links a {
   color: var(--color-link);
   text-decoration: none;
   font-weight: bold;
+  position: relative; 
 }
+
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+.nav-links a.active {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px; 
+  background-color: var(--color-link);
 }
 
 .two-cols {
@@ -91,5 +111,10 @@ header {
 }
 
 .right-col p {
-  margin-top: 1.5rem;
+  margin-top: 1.5rem; 
+}
+.right-col p a {
+  color: var(--color-link, #c0392b);
+  text-decoration: none;
+  font-weight: bold;
 }
